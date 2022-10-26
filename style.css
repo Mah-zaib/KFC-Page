@@ -1,0 +1,543 @@
+body{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: whitesmoke;
+    background-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ::before, ::after {
+    box-sizing: border-box;
+} */
+/* .cover-section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+} */
+
+.cover-image{
+    display: flex;
+    justify-content: flex-end;
+}
+.cover-detail h2{
+ font-size: 60px;
+ padding: 0;
+}
+.cover-detail{
+    margin-top: 40px;
+    margin-left:24px;
+}
+.cover-center{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cover-section{
+      /* position: absolute;         */
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        background-color: red;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+   
+}
+
+.background-cover{
+    /* position: relative;     */
+   height: 100%;
+   width: 100%;
+   /* background-image: url(img/6023483602b2958e57a7f651628334c6--kentucky-fried-fried-chicken.jpg); */
+   background-attachment:scroll;
+   background-size: cover;
+   background-position-x: center;
+   background-position-y: center;
+   left: 0;
+   top: 0;
+   display: block;
+   z-index: -1; 
+  
+}
+
+.logo{
+    display: flex;
+    height: 50px;
+    
+}
+.logo img{
+    filter: contrast(1000%)
+}
+.navbar{
+ display: flex;
+ padding-left: 25px;
+ padding-right: 30px;
+ justify-content: space-between;
+ padding-top: 20px;
+}
+
+.navbar-items{
+    display:flex;
+    align-items: center;
+
+}
+
+.navbar-items-name{
+    display: flex;
+    
+}
+
+.navbar-items-name h3{
+  color: aliceblue;
+  display: flex;
+  margin: 10px;
+}
+
+.navbar-items-logos{
+    font-size: 28px;
+  
+}
+.order-button{
+    display: flex;
+    
+}
+.order-button .btn{
+    margin: 15px 0 0;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: transparent;
+    border: 2px solid;
+    
+}
+.btn-default{
+    border:2x solid white;
+}
+.btn-default:hover {
+    color:white;
+    background-color:silver;
+}
+
+a{
+    text-decoration: none;
+}
+/* -----------------------------menu slider---------------------------- */
+
+/* .menu-container{
+    max-width: 1170px;
+    margin: auto;
+    background-color: coral;
+} */
+
+.menu-section{
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 0;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    background-color:white;
+    
+}
+.menu-container{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+.menu-button .btn{
+    margin: 15px 0 0;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color:#eaa023 ;
+
+
+}
+.menu-center-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-button {
+    display: flex;
+    position: absolute;
+    margin-bottom: 0;
+    margin-top: -55px;
+    
+}
+.menu-icon{
+    font-size: large;
+    color: black;
+}
+
+.menu-slider-items{
+    display: flex;
+}
+.menu-slider-items h5{
+    color: black;
+}
+.menu-slider-items img{
+    height: 100px;
+    width: 100px;
+}
+
+.image-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ---------------------deals section---------------------- */
+.deals-section{
+    background-color: pink;
+}
+.deals-container{
+    max-width: 1170px;
+    margin: auto;
+    display: block;
+
+}
+.deals-cards{
+    display: flex;
+    padding-top: 36px;
+
+}
+.deals-card-item{
+    display: flex;
+    align-items: center;
+    margin: 0 15px 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow:0 0 15px rgba(0, 0,0, 0.25);
+    background-color:white ;
+}
+.item-info{
+    color: black;
+  
+    margin-right: 0;
+}
+.item-image img{
+    height:100px ;
+    width:100px;
+}
+/* ------------------------------recomendation---------------------- */
+.recommendation-section{
+    background-color:#eaa023 ;
+
+}
+.recommendation-container{
+   
+     max-width: 1170px;
+    margin: auto;
+    display: flex;
+    height:268px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommendation-cards{
+    display: flex;
+    padding-top: 36px;
+   position: relative;
+}
+
+.recommendation-item{
+    display: flex;
+    align-items: center;
+    
+    padding: 32px 20px;
+    /* box-shadow:0 0 15px rgba(0, 0,0, 0.75); */
+    background-color:red ;
+    margin: 32px;
+    margin-top: -154px;
+    height: 310px;
+    width: 200px;
+    position: absolute;
+
+    
+    box-sizing: border-box;
+}
+.recommendation-info{
+
+}
+.social-media-button{
+display: flex;
+}
+.buttons
+{ margin: 15px 0 0;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color:black ;
+
+}
+
+.buttons  a{
+    color: white;
+}
+
+.barrel-image img{
+    height: 100px;
+    width:144px;
+}
+
+.recommendation-data{
+    display: flex;
+    flex-direction: column;
+}
+.LOGIN-button .btn{
+    margin: 15px 0 0;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color:#eaa023 ;
+}
+.LOGIN-button{
+    display: flex;
+    justify-content: center;
+}
+.social-media-button{
+    display: flex;
+    gap: 10px;
+}
+
+/* ---------------------------feedback---------------------- */
+.feedback-section{
+    background-color:pink;
+}
+.feedback-container{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-cards{
+    display: flex;
+    flex-direction: column;
+    padding-top: 36px;
+}
+
+.first-row{
+    display: flex;
+
+}
+.second-row{
+ display: flex;
+}
+
+.feedback-cards-item{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    margin: 0 15px 15px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow:0 0 15px rgba(0, 0,0, 0.25);
+    background-color:white ;
+
+}
+.feedback-cards-item-header{
+ display: flex;
+ justify-content: space-between;
+ 
+}
+.feedback-cards-item-header h3{
+    color: black;
+    margin-left: 10px;
+}
+.feedback-cards-item-paragraph{
+    color: black;
+}
+.zinger-video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zinger-video video{
+ width: 360px;
+ height: 450px;
+ box-shadow: 5px solid black;
+}
+
+.video-text{
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    background-color: blanchedalmond;
+    /* height: 100%;
+    width: 100%; */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -280px;
+    margin-left:-115px;
+
+}
+
+
+
+
+/* ----------------footer top----------------------- */
+.footer-top-section{
+    background-color: red;
+   
+}
+.phone{
+    display: flex;gap: 5px;
+}
+.phone p{
+    font-size: 16px;
+    display: flex;
+}
+
+
+.footer-top-container{
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo-links{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+    font-size: 28px;
+
+}
+.links{
+     display: flex;
+    /* align-content: stretch;
+    justify-content: space-evenly; */
+    gap: 20px;
+    color: white;
+}
+/* -------------------------footer--------------------------- */
+ .footer-section::before{
+ content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.9;
+    z-index: -1; 
+}
+.footer-section{
+ padding: 10px 54px 0;
+ background-color:grey;
+ background-size:cover ;
+ background-position:center ;
+ background-position-x: center;
+ background-position-y: center;
+ background-attachment: fixed;
+ position: relative;
+ z-index: 1;
+ display: flex;
+ flex-direction: row-reverse;
+
+ padding-bottom: 44px;
+}
+.main-container{
+    max-width: 1170px;
+    margin: auto;
+}
+.first-row{
+    margin-top: 100px;
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: space-evenly;
+}
+.first-row p{
+    display:ruby-text;
+}
+.links{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    padding-right: 0; */
+}
+.links a{
+    color: whitesmoke;
+}
+
+.second-row{
+ display: flex;
+ justify-content: center;
+ color: darkgrey;
+}
+
+
+.footer-end{
+    margin: 80px 0 0;
+    width: 100%;
+    text-align: center;
+    border-top:1px solid whitesmoke;
+    padding: 25px 15px;
+    font-size: 15px;
+
+}
+
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+    color: darkgrey;
+}
+
+
